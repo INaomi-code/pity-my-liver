@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Active</title>
+</head>
+<body>
+    <style>
+         form {
+        background-color: White;
+        Width: 350px;
+        margin: 80px auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 04 15px rgba(0,0,0,0.1);
+    }
+    label{
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    input{
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    input:focus{
+        outline: none;
+        border: 2px solid #2474c6;
+    }
+    button{
+        background-color: red;
+        font-size: 25px;
+        font-family: cursive;
+        border-radius: 6px;
+        width: 300px;
+    }
+    button:hover{
+       background-color:  rgb(252, 126, 126);
+        font-size: 25px;
+        font-family: cursive;
+        border-radius: 7px;
+    }
+    body{
+        background-color: black;
+        display: flex;
+    }
+    label{
+        color: blue;
+    }
+    </style>
+    <form>
+    <label for="name">your name</label>
+<input id="name" name="name"
+type="text" required>
+<label for="email">Email</label>
+<input id="email" email="email"
+type="email" required>
+ <button type="submit">join</button>
+    </form>
+<form>
+    <label for="name">Your name</label>
+    <input id="name" name="name" type="text" 
+    placeholder="your name" autocomplete="name" required>
+    <label for="email">Email</label>
+    <input id="email" email="email" type="email"
+    placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">join</button>
+</form>
+        
+</body>
+</html>
